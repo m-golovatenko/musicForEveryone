@@ -35,6 +35,7 @@
     border-radius: 1.2rem;
     background-color: var(--base-black-05);
     flex-shrink: 0;
+    padding: 2.4rem;
 }
 
 .help__content {

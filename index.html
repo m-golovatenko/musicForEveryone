@@ -59,42 +59,16 @@
         <p class="help__subtitle">Комплексный и научно обоснованный подход к реабилитации через музыку</p>
     </div>
     <ul class="help__cardList">
-        <li class="help__card">
-            <div class="help__icon"></div>
-            <div class="help__content">
-                <h3 class="help__cardTitle">Программа</h3>
-                <p class="help__description">Внедряем структурированный курс музыкальной терапии, который интегрируется в общий план реабилитации каждого пациента для достижения максимального синергетического эффекта.
-                </p>
-            </div>
-        </li>
-        <li class="help__card">
-            <div class="help__icon"></div>
-            <div class="help__content">
-                <h3 class="help__cardTitle">Подход</h3>
-                <p class="help__description">Не просто занятия музыкой, а системная терапия, нацеленная на восстановление целостности личности и возвращение человека к полноценной жизни.
-                </p>
-            </div>
-        </li>
-        <li class="help__card">
-            <div class="help__icon"></div>
-            <div class="help__content">
-                <h3 class="help__cardTitle">Преимущества для вашего центра</h3>
-                <p class="help__description">Внедряем структурированный курс музыкальной терапии, который интегрируется в общий план реабилитации каждого пациента для достижения максимального синергетического эффекта.
-                </p>
-            </div>
-        </li>
-        <li class="help__card">
-            <div class="help__icon"></div>
-            <div class="help__content">
-                <h3 class="help__cardTitle">Ключевые направления воздействия
-                </h3>
-                <p class="help__description">Внедряем структурированный курс музыкальной терапии, который интегрируется в общий план реабилитации каждого пациента для достижения максимального синергетического эффекта.
-                </p>
-            </div>
-        </li>
+        <template id="helpCardTemplate">
+            <li class="help__card">
+                <img src="" alt="Иконка." class="help__icon"/>
+                <div class="help__content">
+                    <h3 class="help__cardTitle"></h3>
+                    <p class="help__description"></p>
+                </div>
+            </li>
+        </template>
     </ul>
-
-
 </section>
 
 <section class="specialist" id="specialists">
@@ -102,7 +76,7 @@
     <ul class="specialist__list">
         <template id="specialistTemplate">
             <li class="specialist__card">
-                <img class="specialist__img" />
+                <img src="" class="specialist__img" alt="Фотография специалиста"/>
                 <div class="specialist__content">
                     <div class="specialist__info">
                         <h3 class="specialist__name"></h3>
@@ -133,69 +107,25 @@
 
 
 </section>
+
 <section class="news" id="news">
     <h2>Новости</h2>
     <ul class="news__content">
-        <li class="news__card">
-            <div class="news__img"></div>
-            <div class="news__info">
-                <div class="news__textContainer">
-                    <h4 class="news__title">
-                        Участие в форуме «11»
-                    </h4>
-                    <p class="news__text">На выходных в Доме молодежи прошел ежегодный городской форум «11», собравший около 100 активных молодых участников — студентов, школьников, работников и представителей общественных организаций. Цель мероприятия — научить молодежь реализовывать свои идеи в проекты, способные улучшить жизнь города.</p>
+        <template id="newsTemplate">
+            <li class="news__card">
+                <img src="" alt="Изображение новости." class="news__img">
+                <div class="news__info">
+                    <div class="news__textContainer">
+                        <h4 class="news__title"></h4>
+                        <p class="news__text"></p>
+                    </div>
+                    <div class="news__extra">
+                        <button class="news__button">Подробнее</button>
+                        <div class="news__date"></div>
+                    </div>
                 </div>
-                <div class="news__extra">
-                    <button class="news__button">Подробнее</button>
-                    <div class="news__date">07.03.2025</div>
-                </div>
-            </div>
-        </li>
-        <li class="news__card">
-            <div class="news__img"></div>
-            <div class="news__info">
-                <div class="news__textContainer">
-                    <h4 class="news__title">
-                        Участие в форуме «11»
-                    </h4>
-                    <p class="news__text">На выходных в Доме молодежи прошел ежегодный городской форум «11», собравший около 100 активных молодых участников — студентов, школьников, работников и представителей общественных организаций. Цель мероприятия — научить молодежь реализовывать свои идеи в проекты, способные улучшить жизнь города.</p>
-                </div>
-                <div class="news__extra">
-                    <button class="news__button">Подробнее</button>
-                    <div class="news__date">07.03.2025</div>
-                </div>
-            </div>
-        </li>
-        <li class="news__card">
-            <div class="news__img"></div>
-            <div class="news__info">
-                <div class="news__textContainer">
-                    <h4 class="news__title">
-                        Участие в форуме «11»
-                    </h4>
-                    <p class="news__text">На выходных в Доме молодежи прошел ежегодный городской форум «11», собравший около 100 активных молодых участников — студентов, школьников, работников и представителей общественных организаций. Цель мероприятия — научить молодежь реализовывать свои идеи в проекты, способные улучшить жизнь города.</p>
-                </div>
-                <div class="news__extra">
-                    <button class="news__button">Подробнее</button>
-                    <div class="news__date">07.03.2025</div>
-                </div>
-            </div>
-        </li>
-        <li class="news__card">
-            <div class="news__img"></div>
-            <div class="news__info">
-                <div class="news__textContainer">
-                    <h4 class="news__title">
-                        Участие в форуме «11»
-                    </h4>
-                    <p class="news__text">На выходных в Доме молодежи прошел ежегодный городской форум «11», собравший около 100 активных молодых участников — студентов, школьников, работников и представителей общественных организаций. Цель мероприятия — научить молодежь реализовывать свои идеи в проекты, способные улучшить жизнь города.</p>
-                </div>
-                <div class="news__extra">
-                    <button class="news__button">Подробнее</button>
-                    <div class="news__date">07.03.2025</div>
-                </div>
-            </div>
-        </li>
+            </li>
+        </template>
     </ul>
     <dialog id="newsDialog">
         <div class="dialog__closeArea">
@@ -213,48 +143,22 @@
     <div class="docs__content">
         <h2 class="docs__title">Отчёты и документы</h2>
         <div class="docs__list">
-            <div class="docs__item">
-                <div class="docs__top">
-                    <div class="docs__icon"></div>
-                    <p class="docs__date">18.07.2025</p>
-                </div>
-                <div class="docs__bottom">
-                    <h3 class="docs__itemTitle">Свидетельство</h3>
-                    <div class="docs__buttons">
-                        <button class="docs__button">Посмотреть</button>
-                        <div class="docs__divider"></div>
-                        <button class="docs__button">Скачать</button>
+            <template id="docTemplate">
+                <div class="docs__item">
+                    <div class="docs__top">
+                        <img src="" alt="Иконка." class="docs__icon"></img>
+                        <p class="docs__date"></p>
+                    </div>
+                    <div class="docs__bottom">
+                        <h3 class="docs__itemTitle"></h3>
+                        <div class="docs__buttons">
+                            <button class="docs__button docs__view">Посмотреть</button>
+                            <div class="docs__divider"></div>
+                            <button class="docs__button docs__download">Скачать</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="docs__item">
-                <div class="docs__top">
-                    <div class="docs__icon"></div>
-                    <p class="docs__date">18.07.2025</p>
-                </div>
-                <div class="docs__bottom">
-                    <h3 class="docs__itemTitle">Свидетельство</h3>
-                    <div class="docs__buttons">
-                        <button class="docs__button">Посмотреть</button>
-                        <div class="docs__divider"></div>
-                        <button class="docs__button">Скачать</button>
-                    </div>
-                </div>
-            </div>
-            <div class="docs__item">
-                <div class="docs__top">
-                    <div class="docs__icon"></div>
-                    <p class="docs__date">18.07.2025</p>
-                </div>
-                <div class="docs__bottom">
-                    <h3 class="docs__itemTitle">Свидетельство</h3>
-                    <div class="docs__buttons">
-                        <button class="docs__button">Посмотреть</button>
-                        <div class="docs__divider"></div>
-                        <button class="docs__button">Скачать</button>
-                    </div>
-                </div>
-            </div>
+            </template>
         </div>
     </div>
 </section>
