@@ -1,6 +1,6 @@
 export const specialists = [
     {
-        img: '../images/specialist.jpg',
+        img: './images/specialist.jpg',
         name: "Апальков Павел Сергеевич",
         job: "Генеральный директор АНО «Социальные инициативы»",
         activity: [
@@ -15,7 +15,7 @@ export const specialists = [
         ]
     },
     {
-        img: '../images/specialist.jpg',
+        img: './images/specialist.jpg',
         name: "Соболев Илья Евгеньевич",
         job: "Когнитивно-поведенческий терапевт",
         activity: [
@@ -30,7 +30,7 @@ export const specialists = [
         ]
     },
     {
-        img: '../images/specialist.jpg',
+        img: './images/specialist.jpg',
         name: "Соболев Илья Евгеньевич",
         job: "Когнитивно-поведенческий терапевт",
         activity: [
@@ -45,7 +45,7 @@ export const specialists = [
         ]
     },
     {
-        img: '../images/specialist.jpg',
+        img: './images/specialist.jpg',
         name: "Соболев Илья Евгеньевич",
         job: "Когнитивно-поведенческий терапевт",
         activity: [
@@ -60,7 +60,7 @@ export const specialists = [
         ]
     },
     {
-        img: '../images/specialist.jpg',
+        img: './images/specialist.jpg',
         name: "Соболев Илья Евгеньевич",
         job: "Когнитивно-поведенческий терапевт",
         activity: [
@@ -75,7 +75,7 @@ export const specialists = [
         ]
     },
     {
-        img: '../images/specialist.jpg',
+        img: './images/specialist.jpg',
         name: "Соболев Илья Евгеньевич",
         job: "Когнитивно-поведенческий терапевт",
         activity: [
@@ -90,7 +90,7 @@ export const specialists = [
         ]
     },
     {
-        img: '../images/specialist.jpg',
+        img: './images/specialist.jpg',
         name: "Соболев Илья Евгеньевич",
         job: "Когнитивно-поведенческий терапевт",
         activity: [
