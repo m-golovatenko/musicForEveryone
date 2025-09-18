@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
             dialog.showModal();
         });
     });
-
     closeBtn.addEventListener('click', () => dialog.close());
 
     dialog.addEventListener('click', (e) => {
