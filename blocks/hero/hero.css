@@ -1,0 +1,53 @@
+.hero {
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14.4rem 6.4rem 12.8rem 6.4rem !important;
+    gap: 36rem !important;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.hero__title {
+    font-size: 12rem;
+    line-height: 110%;
+    font-weight: 600;
+}
+
+.hero__subtitle {
+    font-size: 4rem;
+    line-height: 110%;
+}
+
+.hero__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+}
+
+.hero__contactTitle {
+    font-size: 4rem;
+    line-height: 110%;
+}
+
+.hero__contactLinkList {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.hero__contactLink {
+    padding: 2rem 2.4rem;
+    border-radius: 1.6rem;
+    background-color: var(--base-black);
+    color: var(--white);
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+}
+
+.hero__contactLink:hover {}

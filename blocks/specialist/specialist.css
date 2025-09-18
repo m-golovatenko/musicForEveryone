@@ -1,0 +1,114 @@
+.specialist {
+    flex-direction: column;
+}
+
+.specialist__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.specialist__card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    border-radius: 1.6rem;
+    border: 1px solid var(--base-black-10);
+    height: max-content;
+}
+
+.specialist__img {
+    width: 100%;
+    border-radius: 1.2rem;
+    object-fit: contain;
+    background-color: var(--grey);
+    height: 56rem;
+}
+
+.specialist__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2.4rem 1.6rem 1.6rem 1.6rem;
+}
+
+.specialist__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.specialist__name {
+    font-size: 4rem;
+    line-height: 130%;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.specialist__job {
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+.specialist__controllers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specialist__extra {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.specialist__more {
+    padding: 1.2rem 3.6rem;
+    display: flex;
+    gap: 0.4rem;
+    border-radius: 1.2rem;
+    background-color: var(--grey);
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    border: none;
+}
+
+.specialist__extraContainers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.specialist__extraContainers.hidden {
+    display: none !important;
+}
+
+.specialist__extraContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+    background-color: var(--base-black-05);
+}
+
+.specialist__extraTitle {
+    font-size: 2.4rem;
+    line-height: 110%;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.specialist__extraList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc !important;
+    list-style-position: inside !important;
+}
+
+.specialist__extraItem {
+    list-style-position: inside !important;
+    list-style-type: disc !important;
+    font-size: 2rem;
+    line-height: 150%;
+}

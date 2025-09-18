@@ -1,0 +1,116 @@
+.news {
+    flex-direction: column;
+}
+
+.news__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.news__card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    border-radius: 1.6rem;
+    border: 1px solid var(--base-black-10);
+}
+
+.news__img {
+    width: 100%;
+    height: 560px;
+    border-radius: 1.2rem;
+    object-fit: contain;
+    background-color: var(--grey);
+}
+
+.news__info {
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem 1.6rem;
+    gap: 1.6rem;
+}
+
+.news__textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    max-width: 545px;
+    width: 100%;
+}
+
+.news__title {
+    font-size: 2.4rem;
+    line-height: 130%;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.news__text {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.news__extra {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.news__button {
+    padding: 1.2rem 2.25rem;
+    display: flex;
+    gap: 0.4rem;
+    border-radius: 1.2rem;
+    background-color: var(--grey);
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    border: none;
+}
+
+.news__date {
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    border-radius: 1.2rem;
+    background-color: var(--grey);
+}
+
+dialog {
+    display: none;
+    border-radius: 1.6rem;
+    border: none;
+    max-width: calc(100vw - 6.4rem);
+    width: 100%;
+    max-height: calc(100vh - 6.4rem);
+    height: 100%;
+    top: 3.2rem;
+    left: 3.2rem;
+    flex-direction: column;
+    gap: 4.8rem;
+    padding: 6.4rem !important;
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.5);
+}
+
+.dialog__closeArea {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 1.6rem;
+}
+
+.dialog__close {
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: var(--base-black-05);
+    border-radius: 1.2rem;
+    border: none;
+}

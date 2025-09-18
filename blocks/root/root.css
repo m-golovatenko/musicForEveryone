@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --accent: #7cb9f7;
+    --grey: #F2F2F2;
+    --white: #fff;
+    --base-black: #000;
+    --base-black-05: rgba(0, 0, 0, 0.05);
+    --base-black-10: rgba(0, 0, 0, 0.1);
+    --font-base: 'PT Root UI', Arial, sans-serif;
+}
+
+.root {
+    margin: 0 auto;
+    background-color: var(--white);
+    color: var(--base-black);
+    padding: 3.2rem 0 0 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: var(--font-base), sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.root * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.root a {
+    appearance: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.root section {
+    padding: 12.8rem 6.4rem;
+    display: flex;
+    gap: 6.4rem;
+}
+
+.root h2 {
+    font-size: 9.6rem;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-weight: 500;
+}
