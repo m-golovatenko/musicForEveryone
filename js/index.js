@@ -12,3 +12,9 @@ renderNews()
 renderDocs()
 
 renderHelpData()
+
+document.querySelectorAll(".vk").forEach(el => {
+    el.addEventListener("click", () => {
+        window.open("https://vk.com/musicandsound", "_blank");
+    });
+});
