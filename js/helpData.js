@@ -14,10 +14,12 @@ export function renderHelpData() {
 
         if (Array.isArray(item.description)) {
             descriptionContainer.innerHTML =
-                `<ul class="help__list">
-                    ${item.description.map(text => 
-                        `<li class="help__listItem">${text}</li>`).join("")}
-                </ul>`;
+                item.description.map(text => `
+                    <div class="help__listItem">
+                        <span class="help__dot bodyM">•</span>
+                         <span class="help__text bodyM">${text}</span>
+                     </div>
+                `).join("");
         } else {
             descriptionContainer.textContent = item.description;
         }

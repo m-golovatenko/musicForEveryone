@@ -20,8 +20,10 @@
     width: 100%;
     height: 560px;
     border-radius: 1.2rem;
-    object-fit: contain;
+    object-fit: cover;
+    display: block;
     background-color: var(--grey);
+    vertical-align: middle;
 }
 
 .news__info {
@@ -39,16 +41,8 @@
     width: 100%;
 }
 
-.news__title {
-    font-size: 2.4rem;
-    line-height: 130%;
-    text-transform: uppercase;
-    font-weight: 500;
-}
 
 .news__text {
-    font-size: 2rem;
-    line-height: 3.2rem;
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 3;
@@ -67,15 +61,11 @@
     gap: 0.4rem;
     border-radius: 1.2rem;
     background-color: var(--grey);
-    font-size: 1.6rem;
-    line-height: 1.6rem;
     border: none;
 }
 
 .news__date {
     padding: 1.2rem;
-    font-size: 1.6rem;
-    line-height: 1.6rem;
     border-radius: 1.2rem;
     background-color: var(--grey);
 }

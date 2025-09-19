@@ -54,17 +54,9 @@
     padding: 1.2rem;
     background-color: var(--base-black-05);
     border-radius: 1.2rem;
-    font-size: 1.6rem;
-    line-height: 1.6rem;
     height: max-content;
 }
 
-.docs__itemTitle {
-    font-size: 4rem;
-    line-height: 130%;
-    font-weight: 500;
-    text-transform: uppercase;
-}
 
 .docs__buttons {
     display: flex;
@@ -85,8 +77,12 @@
 .docs__button {
     border-radius: 1.2rem;
     width: 100%;
-    font-size: 1.6rem;
-    line-height: 1.6rem;
     padding: 1.2rem 0;
     border: none;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .docs__title {
+        max-width: 600px;
+    }
 }

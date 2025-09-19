@@ -5,13 +5,28 @@ html {
 }
 
 :root {
-    --accent: #7cb9f7;
     --grey: #F2F2F2;
     --white: #fff;
     --base-black: #000;
     --base-black-05: rgba(0, 0, 0, 0.05);
     --base-black-10: rgba(0, 0, 0, 0.1);
     --font-base: 'PT Root UI', Arial, sans-serif;
+
+    --space-2xs: 0.2rem;
+    --space-xs: 0.4rem;
+    --space-s: 0.8rem;
+    --space-m: 1.2rem;
+    --space-l: 1.6rem;
+    --space-xl: 2rem;
+    --space-2xl: 2.4rem;
+    --space-3xl: 6.4rem;
+
+    --radius-3xs: 0.4rem;
+    --radius-2xs: 0.6rem;
+    --radius-xs: 0.8rem;
+    --radius-s: 1.2rem;
+    --radius-m: 1.6rem;
+    --radius-l: 2.4rem;
 }
 
 .root {
@@ -55,9 +70,92 @@ html {
     gap: 6.4rem;
 }
 
+.root h2, h3, h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.root h1 {
+    font-size: 12.8rem;
+    font-weight: 600;
+    line-height: 110%;
+}
+
 .root h2 {
     font-size: 9.6rem;
     line-height: 120%;
-    text-transform: uppercase;
-    font-weight: 500;
+}
+
+.root h3 {
+    font-size: 4rem;
+    line-height: 130%;
+}
+
+.root h4 {
+    font-size: 2.4rem;
+    line-height: 130%;
+}
+
+.bodyXS {
+    font-size: 1.6rem;
+    line-height: 100%;
+}
+
+.bodyS {
+    font-size: 2rem;
+    line-height: 120%;
+}
+
+.bodyM {
+    font-size: 2.4rem;
+    line-height: 150%;
+}
+
+.bodyL {
+    font-size: 4rem;
+    line-height: 110%;
+}
+
+.bodyXL {
+    font-size: 4.8rem;
+    line-height: 150%;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .root h1 {
+        font-size: 9.6rem;
+    }
+
+    .root h2 {
+        font-size: 8rem;
+        line-height: 120%;
+    }
+
+    .root h3 {
+        font-size: 3.2rem;
+    }
+
+    .root h4 {
+        font-size: 2rem;
+    }
+
+    .bodyXS {
+        font-size: 1.6rem;
+    }
+
+    .bodyS {
+        font-size: 1.6rem;
+    }
+
+    .bodyM {
+        font-size: 2rem;
+    }
+
+    .bodyL {
+        font-size: 3.2rem;
+    }
+
+    .bodyXL {
+        font-size: 4rem;
+    }
 }

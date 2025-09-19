@@ -13,25 +13,26 @@ export function renderSpecialists() {
 
         const extraContainers = clone.querySelectorAll(".specialist__extraContainer");
 
-        const activityList = extraContainers[0].querySelector(".specialist__extraList");
-        s.activity.forEach((item) => {
-            const li = document.createElement("li");
-            li.classList.add("specialist__extraItem");
-            li.textContent = item;
-            activityList.appendChild(li);
-        });
+        const activityContainer = extraContainers[0].querySelector(".specialist__extraList");
+        activityContainer.innerHTML = s.activity.map(text => `
+            <div class="specialist__extraItem">
+                <span class="specialist__dot bodyS">•</span>
+                <span class="specialist__text bodyS">${text}</span>
+            </div>
+        `).join("");
 
-        const methodsList = extraContainers[1].querySelector(".specialist__extraList");
-        s.methods.forEach((item) => {
-            const li = document.createElement("li");
-            li.classList.add("specialist__extraItem");
-            li.textContent = item;
-            methodsList.appendChild(li);
-        });
+        const methodsContainer = extraContainers[1].querySelector(".specialist__extraList");
+        methodsContainer.innerHTML = s.methods.map(text => `
+            <div class="specialist__extraItem">
+                <span class="specialist__dot bodyS">•</span>
+                <span class="specialist__text bodyS">${text}</span>
+            </div>
+        `).join("");
 
         list.appendChild(clone);
     });
 }
+
 
 
 export function initSpecialistToggle() {

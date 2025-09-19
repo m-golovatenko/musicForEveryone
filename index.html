@@ -17,17 +17,17 @@
     </div>
 
     <nav class="header__nav">
-        <a href="#about" class="header__nav-link">О проекте</a>
-        <a href="#help" class="header__nav-link">Помощь</a>
-        <a href="#specialists" class="header__nav-link">Специалисты</a>
-        <a href="#news" class="header__nav-link">Новости</a>
-        <a href="#docs" class="header__nav-link">Документы</a>
+        <a href="#about" class="header__nav-link bodyS">О проекте</a>
+        <a href="#help" class="header__nav-link bodyS">Помощь</a>
+        <a href="#specialists" class="header__nav-link bodyS">Специалисты</a>
+        <a href="#news" class="header__nav-link bodyS">Новости</a>
+        <a href="#docs" class="header__nav-link bodyS">Документы</a>
     </nav>
     <ul class="header__contacts">
-        <li class="header__contactLink">
+        <li class="header__contactLink bodyS">
             <p>+7 (904) 234-43-87</p>
         </li>
-        <li class="header__contactLink">
+        <li class="header__contactLink bodyS">
             <a href="mailto:musicandsound@mail.ru">musicandsound@mail.ru</a>
         </li>
         <li class="header__contactLink header__contactLink-vk vk">
@@ -38,7 +38,7 @@
 
 <section class="hero">
     <div class="hero__content">
-        <p class="hero__subtitle">AHO «Музыкальная студия «Музыка для всех»</p>
+        <p class="bodyL">AHO «Музыкальная студия «Музыка для всех»</p>
         <h1 class="hero__title">
            Не просто слушаем музыку, <br>а учимся слышать заново
         </h1>
@@ -46,13 +46,13 @@
     </div>
 
     <div class="hero__contact">
-        <p class="hero__contactTitle">Обратиться за помощью</p>
+        <p class="bodyL">Обратиться за помощью</p>
         <ul class="hero__contactLinkList">
             <li class="hero__contactLink">
-                <p class="">+7 (904) 234-43-87</p>
+                <p class="bodyXL">+7 (904) 234-43-87</p>
             </li>
             <li class="hero__contactLink">
-                <a href="mailto:musicandsound@mail.ru" class="">musicandsound@mail.ru</a>
+                <a href="mailto:musicandsound@mail.ru" class="bodyXL">musicandsound@mail.ru</a>
             </li>
             <li class="hero__contactLink_vk vk">
                 <img alt="Логотип ВК." src="./images/vk.svg" class="hero__vkLogo"/>
@@ -64,15 +64,15 @@
 <section class="about" id="about">
     <h2 class="about__title">О проекте</h2>
     <div class="about__content">
-        <p class="about__text">Наша команда — это сплоченное сообщество музыкотерапевтов, клинических психологов и социальных работников. Наша миссия — реабилитация и социальная адаптация людей с наркозависимостью через силу музыки и комплексный междисциплинарный подход.</p>
-        <p class="about__text">Мы объединяем современные методы музыкальной терапии, профессиональную психологическую поддержку и социальную работу. Оказываем целостное воздействие на наших подопечных, возвращая им веру в себя и вкус к жизни.</p>
+        <p class="about__text bodyXL">Наша команда — это сплоченное сообщество музыкотерапевтов, клинических психологов и социальных работников. Наша миссия — реабилитация и социальная адаптация людей с наркозависимостью через силу музыки и комплексный междисциплинарный подход.</p>
+        <p class="about__text bodyXL">Мы объединяем современные методы музыкальной терапии, профессиональную психологическую поддержку и социальную работу. Оказываем целостное воздействие на наших подопечных, возвращая им веру в себя и вкус к жизни.</p>
     </div>
 </section>
 
 <section class="help" id="help">
     <div class="help__title">
         <h2>Чем мы можем помочь</h2>
-        <p class="help__subtitle">Комплексный и научно обоснованный подход к реабилитации через музыку</p>
+        <p class="bodyXL">Комплексный и научно обоснованный подход к реабилитации через музыку</p>
     </div>
     <ul class="help__cardList">
         <template id="helpCardTemplate">
@@ -80,7 +80,7 @@
                 <img src="" alt="Иконка." class="help__icon"/>
                 <div class="help__content">
                     <h3 class="help__cardTitle"></h3>
-                    <p class="help__description"></p>
+                    <p class="help__description bodyM"></p>
                 </div>
             </li>
         </template>
@@ -96,23 +96,26 @@
                 <div class="specialist__content">
                     <div class="specialist__info">
                         <h3 class="specialist__name"></h3>
-                        <p class="specialist__job"></p>
+                        <p class="specialist__job bodyS"></p>
                     </div>
 
                     <div class="specialist__extra">
                         <div class="specialist__controllers">
-                            <button class="specialist__more">Больше</button>
+                            <button class="specialist__more bodyXS">
+                                <span>Больше</span>
+                                <img src="./images/icons/arrow.svg" alt="Иконка" class="specialist__icon" />
+                            </button>
                             <div class="specialist__vk"></div>
                         </div>
 
                         <div class="specialist__extraContainers hidden">
                             <div class="specialist__extraContainer">
                                 <h4 class="specialist__extraTitle">Деятельность</h4>
-                                <ul class="specialist__extraList"></ul>
+                                <ul class="specialist__extraList bodyS"></ul>
                             </div>
                             <div class="specialist__extraContainer">
                                 <h4 class="specialist__extraTitle">Методы</h4>
-                                <ul class="specialist__extraList"></ul>
+                                <ul class="specialist__extraList bodyS"></ul>
                             </div>
                         </div>
                     </div>
@@ -133,11 +136,15 @@
                 <div class="news__info">
                     <div class="news__textContainer">
                         <h4 class="news__title"></h4>
-                        <p class="news__text"></p>
+                        <p class="news__text bodyS"></p>
                     </div>
                     <div class="news__extra">
-                        <button class="news__button">Подробнее</button>
-                        <div class="news__date"></div>
+                        <button class="news__button bodyXS">
+                            <span>Подробнее</span>
+                            <img src="./images/icons/arrow.svg" alt="Иконка" />
+                        </button>
+
+                        <div class="news__date bodyXS"></div>
                     </div>
                 </div>
             </li>
@@ -162,15 +169,15 @@
             <template id="docTemplate">
                 <div class="docs__item">
                     <div class="docs__top">
-                        <img src="" alt="Иконка." class="docs__icon"></img>
-                        <p class="docs__date"></p>
+                        <img src="" alt="Иконка." class="docs__icon"/>
+                        <p class="docs__date bodyXS"></p>
                     </div>
                     <div class="docs__bottom">
                         <h3 class="docs__itemTitle"></h3>
                         <div class="docs__buttons">
-                            <button class="docs__button docs__view">Посмотреть</button>
+                            <button class="docs__button docs__view bodyXS">Посмотреть</button>
                             <div class="docs__divider"></div>
-                            <button class="docs__button docs__download">Скачать</button>
+                            <button class="docs__button docs__download bodyXS">Скачать</button>
                         </div>
                     </div>
                 </div>
@@ -183,15 +190,18 @@
     <div class="footer__logoContainer">
         <img src='./images/logo.svg' alt='Лого.' class="footer__logo"/>
         <div class="footer__divider"></div>
-        <p class="footer__company">АНО «Музыкальная студия «Музыка и звук для всех»</p>
+        <p class="footer__company bodyL">АНО «Музыкальная студия «Музыка и звук для всех»</p>
     </div>
 
     <ul class="footer__contactLinkList">
         <li class="footer__contactLink">
-            <p class="footer__link">+7 (904) 234-43-87</p>
+            <p class="footer__link bodyL">+7 (904) 234-43-87</p>
         </li>
         <li class="footer__contactLink">
-            <a href="mailto:musicandsound@mail.ru" class="">musicandsound@mail.ru</a>
+            <a href="mailto:musicandsound@mail.ru" class="bodyL">musicandsound@mail.ru</a>
+        </li>
+        <li class="footer__contactLink_vk vk">
+            <img alt="Логотип ВК." src="./images/vk.svg" class="footer__vkLogo"/>
         </li>
     </ul>
 </footer>
