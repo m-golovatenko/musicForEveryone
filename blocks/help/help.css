@@ -56,3 +56,7 @@
     font-size: 2.4rem;
     line-height: 3.2rem;
 }
+
+.help__list, .help__listItem {
+    list-style-type: disc !important;
+}

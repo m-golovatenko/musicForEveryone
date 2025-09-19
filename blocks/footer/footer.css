@@ -16,7 +16,6 @@
     width: 24rem;
     height: 8rem;
     flex-shrink: 0;
-    background: var(--grey);
 }
 
 .footer__divider {
