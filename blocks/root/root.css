@@ -47,6 +47,11 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.test-font-load {
+    font-family: 'PT Root UI', sans-serif;
+    color: red;
+}
+
 .root * {
     margin: 0;
     padding: 0;
