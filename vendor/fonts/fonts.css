@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('./PT-Root-UI_Regular.ttf') format('ttf');
+    src: url('./PT-Root-UI_Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url('./PT-Root-UI_Medium.ttf') format('ttf');
+    src: url('./PT-Root-UI_Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -19,5 +19,5 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('./PT-Root-UI_Bold.ttf') format('ttf');
+    src: url('./PT-Root-UI_Bold.ttf') format('truetype');
 }
