@@ -18,6 +18,6 @@ scrollOnLogo()
 
 document.querySelectorAll(".vk").forEach(el => {
     el.addEventListener("click", () => {
-        window.open("https://vk.com/musicandsound", "_blank");
+        window.open("https://vk.com/club232724284", "_blank");
     });
 });
