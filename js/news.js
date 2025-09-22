@@ -26,7 +26,6 @@ export function renderNews() {
 
             dialogText.innerHTML = "";
 
-
             item.fullText.split("\n\n").forEach(paragraph => {
                 if (paragraph.trim() !== "") {
                     const p = document.createElement("p");
@@ -44,11 +43,5 @@ export function renderNews() {
 
     dialogClose.addEventListener("click", () => {
         dialog.close();
-    });
-
-    dialog.addEventListener("click", (e) => {
-        if (e.target === dialog) {
-            dialog.close();
-        }
     });
 }
