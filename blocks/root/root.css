@@ -195,6 +195,7 @@ html {
 
     .root section {
         gap: 4.8rem;
+        padding: 9.6rem var(--space-2xl);
     }
 
     .root h1 {

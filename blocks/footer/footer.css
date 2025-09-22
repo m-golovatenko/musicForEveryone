@@ -1,5 +1,5 @@
 .footer {
-    padding: 14rem var(--space-3xl);
+    padding: var(--space-4xl) var(--space-3xl);
     display: flex;
     gap: 6.4rem;
 }
@@ -52,6 +52,9 @@
 }
 
 @media (max-width: 1919px) {
+    .footer {
+        padding: 9.6rem var(--space-2xl);
+    }
 
     .footer__logoContainer {
         max-width: 53.7rem;

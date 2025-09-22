@@ -101,6 +101,7 @@
     .docs__content {
         gap: 4.8rem;
         flex-direction: column;
+        padding: 9.6rem var(--space-2xl);
     }
 
     .docs__icon {
