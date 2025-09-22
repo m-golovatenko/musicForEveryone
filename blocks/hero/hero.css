@@ -5,6 +5,7 @@
     justify-content: space-between;
     padding: calc(var(--space-5xl) - var(--space-xl) - 80px) var(--space-3xl) var(--space-4xl) var(--space-3xl) !important;
     gap: 36rem !important;
+    position: relative;
 }
 
 .hero__content {
@@ -15,6 +16,13 @@
 
 .hero__title {
     text-transform: none !important;
+}
+
+.hero__image {
+    position: absolute;
+    top: -20%;
+    right: -37%;
+    z-index: -1;
 }
 
 .hero__contact {
