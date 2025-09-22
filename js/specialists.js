@@ -29,6 +29,13 @@ export function renderSpecialists() {
             </div>
         `).join("");
 
+        const vkLink = clone.querySelector(".specialist__vk");
+        if (s.vk) {
+            vkLink.href = s.vk;
+        } else {
+            vkLink.style.display = "none";
+        }
+
         list.appendChild(clone);
     });
 }
@@ -39,10 +46,15 @@ export function initSpecialistToggle() {
     const buttons = document.querySelectorAll('.specialist__more');
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
-            const content = btn.closest('.specialist__card').querySelector('.specialist__extraContainers');
-            content.classList.toggle('hidden');
+            const card = btn.closest('.specialist__card');
+            const content = card.querySelector('.specialist__extraContainers');
+            const textEl = btn.querySelector('.specialist__moreText');
+            const icon = btn.querySelector('.specialist__icon');
 
-            btn.textContent = content.classList.contains('hidden') ? 'Больше' : 'Скрыть';
+            const isHidden = content.classList.toggle('hidden');
+
+            textEl.textContent = isHidden ? 'Больше' : 'Скрыть';
+            icon.classList.toggle('specialist__icon--rotated', !isHidden);
         });
     });
 }

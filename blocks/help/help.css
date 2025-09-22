@@ -19,7 +19,7 @@
     width: calc((100% / 2) - 2rem);
     border-radius: 1.6rem;
     display: flex;
-    padding: 3.2rem;
+    padding: var(--space-xl);
     border: 1px solid var(--base-black-10);
     gap: 3.2rem;
 }
@@ -30,7 +30,7 @@
     border-radius: 1.2rem;
     background-color: var(--base-black-05);
     flex-shrink: 0;
-    padding: 2.4rem;
+    padding: var(--space-xl);
 }
 
 .help__content {
@@ -44,7 +44,7 @@
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    padding-left: 12px;
+    padding-left: var(--space-s);
 }
 
 .help__dot {

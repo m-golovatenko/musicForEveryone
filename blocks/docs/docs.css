@@ -6,7 +6,7 @@
 .docs__content {
     display: flex;
     gap: 6.4rem;
-    padding: 12.8rem 6.4rem;
+    padding: var(--space-4xl) var(--space-3xl);
     width: 100%;
 }
 
@@ -28,7 +28,7 @@
     gap: 3.2rem;
     background-color: var(--white);
     border-radius: 1.6rem;
-    padding: 3.2rem;
+    padding: var(--space-xl);
 }
 
 .docs__top {
@@ -43,7 +43,7 @@
 }
 
 .docs__icon {
-    padding: 2.4rem;
+    padding: var(--space-xl);
     background-color: var(--base-black-05);
     border-radius: 1.2rem;
     width: 9.6rem;
@@ -51,7 +51,7 @@
 }
 
 .docs__date {
-    padding: 1.2rem;
+    padding: var(--space-s);
     background-color: var(--base-black-05);
     border-radius: 1.2rem;
     height: max-content;
@@ -77,11 +77,21 @@
 .docs__button {
     border-radius: 1.2rem;
     width: 100%;
-    padding: 1.2rem 0;
+    padding: var(--space-s) 0;
     border: none;
+
 }
 
-@media (min-width: 1920px) and (max-width: 2560px) {
+.docs__button:hover {
+    cursor: pointer;
+    background: var(--base-black-05)
+}
+
+.docs__button:focus {
+  outline: 1px solid var(--base-black-30);
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
     .docs__title {
         max-width: 600px;
     }

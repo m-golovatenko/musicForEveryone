@@ -11,7 +11,7 @@
 .specialist__card {
     display: flex;
     flex-direction: column;
-    padding: 0.8rem;
+    padding: var(--space-xs);
     border-radius: 1.6rem;
     border: 1px solid var(--base-black-10);
     height: max-content;
@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    padding: 2.4rem 1.6rem 1.6rem 1.6rem;
+    padding: var(--space-xl) var(--space-m) var(--space-m) var(--space-m);
 }
 
 .specialist__info {
@@ -59,17 +59,17 @@
     display: flex;
     gap: 0.4rem;
     border-radius: 1.2rem;
-    background-color: var(--grey);
     border: none;
-}
-
-.specialist__more:hover {
-    cursor: pointer;
 }
 
 .specialist__icon {
     width: 1.6rem;
     height: 1.6rem;
+    transition: transform 0.3s ease;
+}
+
+.specialist__icon--rotated {
+    transform: rotate(180deg);
 }
 
 .specialist__extraContainers {
@@ -104,8 +104,17 @@
     padding-left: 12px;
 }
 
-.specialist__dot {
+.specialist__dot  {
     flex-shrink: 0;
     font-size: 1.6rem;
     line-height: 1;
+}
+
+.specialist__vk:hover {
+    cursor: pointer;
+}
+
+.specialist__vkLogo {
+    width: 3.2rem;
+    height: 3.2rem;
 }

@@ -12,3 +12,9 @@
     max-width: 800px;
     width: 100%;
 }
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+    .about__title {
+        max-width: 600px;
+    }
+}

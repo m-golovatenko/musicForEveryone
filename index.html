@@ -17,11 +17,11 @@
     </div>
 
     <nav class="header__nav">
-        <a href="#about" class="header__nav-link bodyS">О проекте</a>
-        <a href="#help" class="header__nav-link bodyS">Помощь</a>
-        <a href="#specialists" class="header__nav-link bodyS">Специалисты</a>
-        <a href="#news" class="header__nav-link bodyS">Новости</a>
-        <a href="#docs" class="header__nav-link bodyS">Документы</a>
+        <a href="#about" class="header__nav-link bodyM">О проекте</a>
+        <a href="#help" class="header__nav-link bodyM">Помощь</a>
+        <a href="#specialists" class="header__nav-link bodyM">Специалисты</a>
+        <a href="#news" class="header__nav-link bodyM">Новости</a>
+        <a href="#docs" class="header__nav-link bodyM">Документы</a>
     </nav>
     <ul class="header__contacts">
         <li class="header__contactLink bodyS">
@@ -48,13 +48,13 @@
     <div class="hero__contact">
         <p class="bodyL">Обратиться за помощью</p>
         <ul class="hero__contactLinkList">
-            <li class="hero__contactLink">
+            <li class="hero__contactLink button-black">
                 <p class="bodyXL">+7 (904) 234-43-87</p>
             </li>
-            <li class="hero__contactLink">
+            <li class="hero__contactLink button-black">
                 <a href="mailto:musicandsound@mail.ru" class="bodyXL">musicandsound@mail.ru</a>
             </li>
-            <li class="hero__contactLink_vk vk">
+            <li class="hero__contactLink_vk vk button-black">
                 <img alt="Логотип ВК." src="./images/vk.svg" class="hero__vkLogo"/>
             </li>
         </ul>
@@ -101,11 +101,13 @@
 
                     <div class="specialist__extra">
                         <div class="specialist__controllers">
-                            <button class="specialist__more bodyXS">
-                                <span>Больше</span>
-                                <img src="./images/icons/arrow.svg" alt="Иконка" class="specialist__icon" />
+                            <button class="specialist__more bodyXS button-grey">
+                                <span class="specialist__moreText">Больше</span>
+                                <img src="./images/icons/caret.svg" alt="Иконка" class="specialist__icon" />
                             </button>
-                            <div class="specialist__vk"></div>
+                            <a href="" target="_blank" class="specialist__vk">
+                                <img src="./images/vk.svg" alt="Иконка ВК." class="specialist__vkLogo"/>
+                            </a>
                         </div>
 
                         <div class="specialist__extraContainers hidden">
@@ -123,8 +125,6 @@
             </li>
         </template>
     </ul>
-
-
 </section>
 
 <section class="news" id="news">
@@ -139,7 +139,7 @@
                         <p class="news__text bodyS"></p>
                     </div>
                     <div class="news__extra">
-                        <button class="news__button bodyXS">
+                        <button class="news__button bodyXS button-grey">
                             <span>Подробнее</span>
                             <img src="./images/icons/arrow.svg" alt="Иконка" />
                         </button>
@@ -152,14 +152,24 @@
     </ul>
     <dialog id="newsDialog">
         <div class="dialog__closeArea">
-            <button class="dialog__close">&times;</button>
+            <button class="dialog__close button-grey"><img alt="Иконка закрыть." src="./images/icons/close.svg"/></button>
+        </div>
+        <div class="dialog__content">
+            <h4 class="dialog__title"></h4>
+
+            <div class="dialog__media">
+                <img src="" alt="Изображение новости." class="dialog__img">
+                <div class="dialog__description">
+                    <div class="dialog__date bodyXS"></div>
+                    <p class="dialog__text bodyM"></p>
+                </div>
+            </div>
+
+
         </div>
 
-        <h4 class="dialog__title"></h4>
-        <p class="dialog__text"></p>
+
     </dialog>
-
-
 </section>
 
 <section class="docs" id="docs">
@@ -194,13 +204,13 @@
     </div>
 
     <ul class="footer__contactLinkList">
-        <li class="footer__contactLink">
+        <li class="footer__contactLink button-black">
             <p class="footer__link bodyL">+7 (904) 234-43-87</p>
         </li>
-        <li class="footer__contactLink">
+        <li class="footer__contactLink button-black">
             <a href="mailto:musicandsound@mail.ru" class="bodyL">musicandsound@mail.ru</a>
         </li>
-        <li class="footer__contactLink_vk vk">
+        <li class="footer__contactLink_vk vk button-black">
             <img alt="Логотип ВК." src="./images/vk.svg" class="footer__vkLogo"/>
         </li>
     </ul>
