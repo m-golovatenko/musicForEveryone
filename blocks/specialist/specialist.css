@@ -119,3 +119,9 @@
     width: 3.2rem;
     height: 3.2rem;
 }
+
+@media (max-width: 2559px) {
+    .specialist__extraList {
+        gap: 0.6rem;
+    }
+}

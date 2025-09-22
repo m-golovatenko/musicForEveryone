@@ -50,7 +50,7 @@
 .help__dot {
     flex-shrink: 0;
     font-size: 1.6rem;
-    line-height: 1;
+    line-height: 150%;
     margin-top: 0.4em;
 }
 
@@ -63,6 +63,10 @@
 @media (max-width: 2559px) {
     .help__dot {
         margin-top: 0;
+    }
+
+    .help__description {
+        gap: 0.8rem;
     }
 }
 
