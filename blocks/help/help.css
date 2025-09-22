@@ -57,7 +57,7 @@
 .help__description {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 1.2rem;
 }
 
 @media (max-width: 2559px) {

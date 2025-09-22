@@ -95,6 +95,7 @@
 .specialist__extraList {
     display: flex;
     flex-direction: column;
+    gap: 0.8rem;
 }
 
 .specialist__extraItem {
