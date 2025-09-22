@@ -21,7 +21,7 @@
 
 .hero__image {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: -82rem;
     transform: translateY(-50%);
     z-index: -1;
@@ -85,7 +85,6 @@
     }
 
     .hero__image {
-        top: 45%;
         right: -70rem;
         max-width: 120rem;
         height: 120rem;
