@@ -9,8 +9,7 @@
     align-self: start;
     top: var(--space-xl);
     z-index: 9999;
-    max-width: calc(100vw - 4.8rem);
-    width: 100%;
+    width: calc(100% - 2 * var(--space-xl));
     margin: 0 var(--space-xl);
 }
 
@@ -21,6 +20,7 @@
 
 .header__logo {
     height: 4rem;
+    cursor: pointer;
 }
 
 .header__contacts {
@@ -42,6 +42,11 @@
     border-radius: 1.2rem;
     background-color: var(--base-black);
     height: 4.8rem;
+}
+
+.header__vkLogo {
+    height: 3.2rem;
+    width: 3.2rem;
 }
 
 .header__contactLink-vk:hover {
@@ -74,4 +79,29 @@
 .header__nav-link:active {
     background-color: var(--base-black);
     color: var(--white);
+}
+
+@media (max-width: 1919px) {
+    .header {
+        gap: 1.6rem;
+        border-radius: 1.6rem;
+    }
+
+    .header__nav {
+        gap: 0;
+    }
+
+    .header__vkLogo {
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+
+    .header__contactLink-vk {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .header__contacts {
+        gap: 0.4rem;
+    }
 }

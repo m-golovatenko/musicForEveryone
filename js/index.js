@@ -2,6 +2,9 @@ import {initSpecialistToggle, renderSpecialists} from "./specialists.js";
 import {renderNews} from "./news.js";
 import {renderDocs} from "./docs.js";
 import {renderHelpData} from "./helpData.js";
+import {scrollOnLogo} from "./scroll.js";
+
+renderHelpData()
 
 renderSpecialists();
 
@@ -11,7 +14,7 @@ renderNews()
 
 renderDocs()
 
-renderHelpData()
+scrollOnLogo()
 
 document.querySelectorAll(".vk").forEach(el => {
     el.addEventListener("click", () => {

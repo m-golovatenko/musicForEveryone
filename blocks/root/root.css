@@ -115,7 +115,7 @@ html {
 
 .bodyM {
     font-size: 2.4rem;
-    line-height: 150%;
+    line-height: 100%;
 }
 
 .bodyL {
@@ -155,7 +155,7 @@ html {
     outline: 1px solid var(--base-black-10);
 }
 
-@media (min-width: 1920px) and (max-width: 2559px) {
+@media (max-width: 2559px) {
     .root h1 {
         font-size: 9.6rem;
     }
@@ -194,7 +194,15 @@ html {
     }
 }
 
-@media (min-width: 1440px) and (max-width: 1919px) {
+@media (max-width: 1919px) {
+    :root {
+        --space-3xl: 4.8rem;
+    }
+
+    .root section {
+        gap: 4.8rem;
+    }
+
     .root h1 {
         font-size: 6.4rem;
     }
@@ -205,6 +213,10 @@ html {
 
     .root h3 {
         font-size: 2.4rem;
+    }
+
+    .bodyS {
+        font-size: 1.4rem;
     }
 
     .bodyXS {
@@ -224,7 +236,8 @@ html {
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (max-width: 1439px) {
+
     .root h1 {
         font-size: 4.8rem;
     }

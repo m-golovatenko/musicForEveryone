@@ -4,17 +4,23 @@
     gap: 6.4rem;
 }
 
-.about__text {
-    text-wrap: balance;
-}
-
 .about__title {
     max-width: 800px;
     width: 100%;
 }
 
-@media (min-width: 1920px) and (max-width: 2559px) {
+@media (max-width: 2559px) {
     .about__title {
         max-width: 600px;
+    }
+}
+
+@media (max-width: 1919px) {
+   .about {
+        flex-direction: column;
+    }
+
+    .about__content {
+        gap: 4.8rem;
     }
 }
