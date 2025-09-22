@@ -68,6 +68,7 @@
     width: max-content;
     padding: var(--space-s) var(--space-m);
     border-radius: 16px;
+    line-height: 100%;
 }
 
 .header__nav-link:hover:not(:active) {
@@ -90,6 +91,7 @@
     .header__nav {
         gap: 0;
     }
+
 
     .header__vkLogo {
         height: 2.4rem;
