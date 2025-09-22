@@ -6,6 +6,7 @@
     padding: calc(var(--space-5xl) - var(--space-xl) - 80px) var(--space-3xl) var(--space-4xl) var(--space-3xl) !important;
     gap: 36rem !important;
     position: relative;
+    overflow-x: clip;
 }
 
 .hero__content {
@@ -20,8 +21,9 @@
 
 .hero__image {
     position: absolute;
-    top: -20%;
-    right: -37%;
+    top: 50%;
+    right: -82rem;
+    transform: translateY(-50%);
     z-index: -1;
 }
 
@@ -80,5 +82,12 @@
     .hero__vkLogo {
         width: 4.8rem;
         height: 4.8rem;
+    }
+
+    .hero__image {
+        top: 45%;
+        right: -70rem;
+        max-width: 120rem;
+        height: 120rem;
     }
 }
