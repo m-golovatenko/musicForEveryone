@@ -9,6 +9,24 @@ const dialogDate = dialog.querySelector(".dialog__date");
 const dialogText = dialog.querySelector(".dialog__text");
 const dialogClose = dialog.querySelector(".dialog__close");
 
+let scrollPosition = 0;
+
+function disableScroll() {
+    scrollPosition = window.pageYOffset;
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.style.width = '100%';
+}
+
+function enableScroll() {
+    document.body.style.removeProperty('overflow');
+    document.body.style.removeProperty('position');
+    document.body.style.removeProperty('top');
+    document.body.style.removeProperty('width');
+    window.scrollTo(0, scrollPosition);
+}
+
 export function renderNews() {
     news.forEach(item => {
         const clone = template.content.cloneNode(true);
@@ -35,13 +53,17 @@ export function renderNews() {
                 }
             });
 
+            disableScroll();
             dialog.showModal();
         });
 
         newsList.appendChild(clone);
     });
 
-    dialogClose.addEventListener("click", () => {
+    const closeDialog = () => {
         dialog.close();
-    });
+        enableScroll();
+    };
+
+    dialogClose.addEventListener("click", closeDialog);
 }
