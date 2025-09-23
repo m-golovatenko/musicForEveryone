@@ -87,3 +87,10 @@
         gap: 0.8rem;
     }
 }
+
+@media (max-width: 1439px) {
+    .help__card {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+}

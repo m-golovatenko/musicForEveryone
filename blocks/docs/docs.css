@@ -110,3 +110,13 @@
         padding: 1.6rem;
     }
 }
+
+@media (max-width: 1439px) {
+    .docs__content {
+        padding: var(--space-4xl) var(--space-2xl);
+    }
+
+    .docs__item {
+        gap: 1.6rem;
+    }
+}

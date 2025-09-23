@@ -79,6 +79,7 @@
         padding: 0.8rem;
         height: 6.4rem;
     }
+
     .hero__vkLogo {
         width: 4.8rem;
         height: 4.8rem;
@@ -88,5 +89,40 @@
         right: -70rem;
         max-width: 120rem;
         height: 120rem;
+    }
+}
+
+@media (max-width: 1439px) {
+    .hero {
+        padding: calc(var(--space-4xl) - var(--space-m) - 48px) var(--space-3xl) var(--space-4xl) var(--space-3xl) !important;
+        gap: 25.6rem !important;
+    }
+
+    .hero__contact {
+        gap: 0.8rem;
+    }
+
+    .hero__contactLink {
+        padding: 1.2rem 1.6rem;
+        height: max-content;
+    }
+
+    .hero__contactLink_vk {
+        height: 4.8rem;
+    }
+
+    .hero__vkLogo {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .hero__contactLinkList {
+        gap: 0.8rem;
+    }
+
+    .hero__image {
+        max-width: 88rem;
+        height: 88rem;
+        right: -52rem;
     }
 }

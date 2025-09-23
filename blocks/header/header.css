@@ -82,6 +82,10 @@
     color: var(--white);
 }
 
+.header__burger {
+    display: none;
+}
+
 @media (max-width: 1919px) {
     .header {
         gap: 1.6rem;
@@ -105,5 +109,34 @@
 
     .header__contacts {
         gap: 0.4rem;
+    }
+}
+
+@media (max-width: 1439px) {
+    .header {
+        padding: var(--space-s);
+        top: var(--space-m);
+        width: calc(100% - 2 * var(--space-m));
+        margin: 0 var(--space-m);
+        border-radius: 1.2rem;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__logo {
+        height: 2.4rem;
+    }
+    .header__logoContainer {
+        height: 2.4rem;
+    }
+
+    .header__contacts {
+      display: none;
+    }
+
+    .header__burger {
+        display: block;
     }
 }
