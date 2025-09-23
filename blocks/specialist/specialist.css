@@ -137,3 +137,21 @@
         height: 34.8rem;
     }
 }
+
+@media (max-width: 1023px) {
+    .specialist__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .specialist__img {
+        height: 32.7rem;
+    }
+
+    .specialist__content {
+        padding: var(--space-m) var(--space-xs) var(--space-xs) var(--space-xs);
+    }
+
+    .specialist__extraContainer {
+        padding: 1.6rem;
+    }
+}

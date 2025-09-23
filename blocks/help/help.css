@@ -94,3 +94,19 @@
         gap: 2.4rem;
     }
 }
+
+@media (max-width: 1023px) {
+    .help__title {
+        text-align: start;
+    }
+
+    .help__cardList {
+        gap: 0.8rem;
+    }
+
+    .help__card {
+        width: 100%;
+        padding: 1.6rem;
+        gap: 1.6rem;
+    }
+}

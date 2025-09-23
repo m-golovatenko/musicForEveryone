@@ -175,3 +175,18 @@
         height: 43.8rem;
     }
 }
+
+
+@media (max-width: 1023px) {
+    .news__content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news__info {
+        padding: var(--space-m) var(--space-xs) var(--space-xs) var(--space-xs);
+    }
+
+    .news__img {
+        height: 32.7rem;
+    }
+}

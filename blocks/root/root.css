@@ -259,3 +259,38 @@ html {
         font-size: 2.4rem;
     }
 }
+
+@media (max-width: 1023px) {
+    .root section {
+        padding: var(--space-4xl) var(--space-m);
+        gap: 2.4rem;
+    }
+
+    .bodyM {
+        font-size: 1.4rem;
+    }
+
+    .bodyL {
+        font-size: 1.6rem;
+    }
+
+    .bodyXL {
+        font-size: 1.6rem;
+    }
+
+    .root h1 {
+        font-size: 3.6rem;
+    }
+
+    .root h2 {
+        font-size: 3.2rem;
+    }
+
+    .root h3 {
+        font-size: 2rem;
+    }
+
+    .root h4 {
+        font-size: 1.6rem;
+    }
+}

@@ -120,3 +120,19 @@
         gap: 1.6rem;
     }
 }
+
+@media (max-width: 1023px) {
+    .docs__content {
+        padding: var(--space-4xl) var(--space-m);
+    }
+
+    .docs__list {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .docs__content {
+        gap: 2.4rem;
+    }
+}

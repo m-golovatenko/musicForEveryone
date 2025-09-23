@@ -126,3 +126,34 @@
         right: -52rem;
     }
 }
+
+@media (max-width: 1023px) {
+    .hero {
+        padding: var(--space-4xl) var(--space-m)!important;
+        gap: 6.4rem !important;
+    }
+
+    .hero__image {
+        display: none;
+    }
+
+    .hero__contact {
+        padding: 1.6rem;
+        background-color: var(--base-black-05);
+        border-radius: 1.6rem;
+        gap: 1.6rem;
+    }
+
+    .hero__contactLinkList {
+       flex-wrap: wrap;
+    }
+
+    .hero__contactLink_vk {
+        height: 4rem;
+    }
+
+    .hero__vkLogo {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+}
