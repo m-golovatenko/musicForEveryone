@@ -42,19 +42,19 @@ export function renderSpecialists() {
 
 
 
-// export function initSpecialistToggle() {
-//     const buttons = document.querySelectorAll('.specialist__more');
-//     buttons.forEach(btn => {
-//         btn.addEventListener('click', () => {
-//             const card = btn.closest('.specialist__card');
-//             const content = card.querySelector('.specialist__extraContainers');
-//             const textEl = btn.querySelector('.specialist__moreText');
-//             const icon = btn.querySelector('.specialist__icon');
-//
-//             const isHidden = content.classList.toggle('hidden');
-//
-//             textEl.textContent = isHidden ? 'Больше' : 'Скрыть';
-//             icon.classList.toggle('specialist__icon--rotated', !isHidden);
-//         });
-//     });
-// }
+export function initSpecialistToggle() {
+    const buttons = document.querySelectorAll('.specialist__more');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const card = btn.closest('.specialist__card');
+            const content = card.querySelector('.specialist__extraContainers');
+            const textEl = btn.querySelector('.specialist__moreText');
+            const icon = btn.querySelector('.specialist__icon');
+
+            const isHidden = content.classList.toggle('hidden');
+
+            textEl.textContent = isHidden ? 'Больше' : 'Скрыть';
+            icon.classList.toggle('specialist__icon--rotated', !isHidden);
+        });
+    });
+}
