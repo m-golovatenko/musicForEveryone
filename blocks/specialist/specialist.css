@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    align-items: stretch;
 }
 
 .specialist__card {
@@ -14,7 +15,7 @@
     padding: var(--space-xs);
     border-radius: 1.6rem;
     border: 1px solid var(--base-black-10);
-    height: max-content;
+    height: 100%;
 }
 
 .specialist__img {
@@ -31,6 +32,8 @@
     flex-direction: column;
     gap: 1.6rem;
     padding: var(--space-xl) var(--space-m) var(--space-m) var(--space-m);
+    flex: 1 0 0;
+    justify-content: space-between;
 }
 
 .specialist__info {
