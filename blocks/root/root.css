@@ -149,6 +149,24 @@ html {
     outline: 1px solid var(--base-black-10);
 }
 
+.root button,
+.root input,
+.root textarea,
+.root select {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.root a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.root button {
+    cursor: pointer;
+}
+
 @media (max-width: 2559px) {
     .root h1 {
         font-size: 9.6rem;

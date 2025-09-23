@@ -129,10 +129,13 @@
     .docs__list {
         display: flex;
         flex-direction: column;
-
     }
 
     .docs__content {
         gap: 2.4rem;
+    }
+
+    .docs__button:hover {
+        background: transparent;
     }
 }
