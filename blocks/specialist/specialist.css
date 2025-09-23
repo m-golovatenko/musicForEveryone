@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    align-items: stretch;
+    align-items: start;
 }
 
 .specialist__card {
@@ -15,7 +15,7 @@
     padding: var(--space-xs);
     border-radius: 1.6rem;
     border: 1px solid var(--base-black-10);
-    height: 100%;
+    height: auto;
 }
 
 .specialist__img {
@@ -25,6 +25,7 @@
     object-fit: cover;
     background-color: var(--grey);
     height: 56rem;
+    object-position: 50% 22%;
 }
 
 .specialist__content {
@@ -32,8 +33,6 @@
     flex-direction: column;
     gap: 1.6rem;
     padding: var(--space-xl) var(--space-m) var(--space-m) var(--space-m);
-    flex: 1 0 0;
-    justify-content: space-between;
 }
 
 .specialist__info {

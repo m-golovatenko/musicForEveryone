@@ -88,7 +88,7 @@ html {
 }
 
 .root h3 {
-    font-size: 4rem;
+    font-size: 3.2rem;
     line-height: 130%;
 }
 
@@ -157,10 +157,6 @@ html {
     .root h2 {
         font-size: 8rem;
         line-height: 120%;
-    }
-
-    .root h3 {
-        font-size: 3.2rem;
     }
 
     .root h4 {
