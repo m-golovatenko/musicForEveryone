@@ -154,8 +154,8 @@
     .header {
         padding: var(--space-s);
         top: var(--space-m);
-        width: calc(100% - 2 * var(--space-m));
-        margin: 0 var(--space-m);
+        width: calc(100% - 2 * 0.8rem);
+        margin: 0 0.8rem;
         border-radius: 1.2rem;
     }
 
