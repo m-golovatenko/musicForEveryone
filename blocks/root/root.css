@@ -155,6 +155,8 @@ html {
 .root select {
     appearance: none;
     -webkit-appearance: none;
+    color: inherit !important;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .root a {
