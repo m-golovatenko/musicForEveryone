@@ -18,6 +18,7 @@ export const specialists = [
     {
         img: './images/specialists/specialist-2.jpg',
         name: "Рыльский Олег Игоревич",
+        vk: 'https://vk.com/impulsdrums',
         job: "Профессиональный барабанщик и преподаватель",
         activity: [
             "Владелец барабанной студии «Импульс» и действующий музыкальный исполнитель",
