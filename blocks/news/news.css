@@ -189,4 +189,40 @@
     .news__img {
         height: 32.7rem;
     }
+
+    .news dialog {
+        padding: 1.6rem !important;
+        max-width: calc(100vw - 3.2rem);
+        top: 1.6rem;
+        left: 1.6rem;
+    }
+
+
+    .dialog__media {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    .dialog__closeArea {
+        padding: 0.8rem;
+    }
+
+    .dialog__title {
+        max-width: calc(100% - 3.2rem);
+    }
+
+    .dialog__img {
+        width: 100%;
+    }
+
+    .dialog__close {
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 0.8rem;
+
+        img {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
 }
