@@ -4,6 +4,7 @@ import {renderDocs} from "./docs.js";
 import {renderHelpData} from "./helpData.js";
 import {scrollOnLogo} from "./scroll.js";
 import {toggleBurger} from "./burger.js";
+import {copyLinks} from "./links.js";
 
 renderHelpData()
 
@@ -18,6 +19,8 @@ renderDocs()
 toggleBurger()
 
 scrollOnLogo()
+
+copyLinks()
 
 document.querySelectorAll(".vk").forEach(el => {
     el.addEventListener("click", () => {
